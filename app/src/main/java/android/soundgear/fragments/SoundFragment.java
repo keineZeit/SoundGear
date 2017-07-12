@@ -1,5 +1,6 @@
-package android.soundgear;
+package android.soundgear.fragments;
 
+import android.soundgear.R;
 import android.view.View;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
