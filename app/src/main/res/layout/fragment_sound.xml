@@ -7,6 +7,7 @@
         android:id="@+id/updateButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:text="@string/sound_refresh" />
     <TextView
         android:id="@+id/textBox"

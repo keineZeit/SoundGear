@@ -1,5 +1,6 @@
 package android.soundgear.fragments;
 
+import android.content.Context;
 import android.soundgear.R;
 import android.view.View;
 import android.view.LayoutInflater;
@@ -8,6 +9,9 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.gigamole.navigationtabstrip.NavigationTabStrip;
+
 import java.util.Date;
 
 public class SoundFragment extends Fragment {
@@ -18,6 +22,10 @@ public class SoundFragment extends Fragment {
         args.putString("mgs", text);
         fragment.setArguments(args);
         return fragment;
+    }
+
+    static String getTitle(Context context, int position) {
+        return "Page № " + String.valueOf(position+1);
     }
 
     @Override
