@@ -18,6 +18,10 @@ public class PageAdapter extends FragmentPagerAdapter {
     }
     @Override
     public Fragment getItem(int position) {
-        return(PageFragment.newInstance(position));
+        switch(position) {
+            case 0: return SoundFragment.newInstance("SoundFragment, Instance 1");
+            case 1: return AirplaneFragment.newInstance("AirplaneFragment, Instance 1");
+            default: return null;
+        }
     }
 }

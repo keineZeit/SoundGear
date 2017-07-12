@@ -11,6 +11,14 @@ import java.util.Date;
 
 public class SoundFragment extends Fragment {
 
+    public static SoundFragment newInstance(String text) {
+        SoundFragment fragment = new SoundFragment();
+        Bundle args = new Bundle();
+        args.putString("mgs", text);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -18,6 +26,7 @@ public class SoundFragment extends Fragment {
 
         Button updateButton = (Button) view.findViewById(R.id.updateButton);
         final TextView updateBox = (TextView) view.findViewById(R.id.textBox);
+        updateBox.setText(getArguments().getString("msg"));
 
         updateButton.setOnClickListener(new View.OnClickListener() {
             @Override
