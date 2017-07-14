@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">SoundGear</string>
     <string name="app_in_work">IN WORK</string>
-
-    <string name="sound_refresh">Refresh</string>
+    <string name="sound_set_singletask">Set Single Task</string>
 </resources>

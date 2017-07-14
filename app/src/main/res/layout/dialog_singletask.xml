@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button_dialog_set"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:background="#00CC66"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/button_dialog_cancel"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:background="#FF3333"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_margin="5dp" />
+</LinearLayout>
