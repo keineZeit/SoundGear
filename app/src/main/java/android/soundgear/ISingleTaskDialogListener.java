@@ -5,5 +5,5 @@ package android.soundgear;
  */
 
 public interface ISingleTaskDialogListener {
-    void OnFinishDialog(boolean state);
+    void OnFinishDialog(int state, Object data);
 }

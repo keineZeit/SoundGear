@@ -3,11 +3,14 @@ package android.soundgear;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.gigamole.navigationtabstrip.NavigationTabStrip;
 
 public class MainActivity extends AppCompatActivity {
 
+    int SOUND_FRAG = 0;
+    int AIRPLANE_FRAG = 1;
     private NavigationTabStrip mNavigationTabStrip;
 
     @Override
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPager mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(new PageAdapter(getSupportFragmentManager()));
         mNavigationTabStrip = (NavigationTabStrip) findViewById(R.id.nts_title);
-        mNavigationTabStrip.setViewPager(mViewPager, 1);
+        mNavigationTabStrip.setViewPager(mViewPager, SOUND_FRAG);
         mNavigationTabStrip.setTitles("Sound", "Airplane");
     }
 

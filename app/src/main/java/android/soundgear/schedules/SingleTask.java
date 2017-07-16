@@ -1,6 +1,8 @@
 package android.soundgear.schedules;
 
 import java.sql.Time;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by Asus on 14.07.2017.
@@ -8,24 +10,22 @@ import java.sql.Time;
 
 public class SingleTask {
 
-    private Time mStartTime;
-    private Time mEndTime;
+    private Date mStartTime;
+    private Date mEndTime;
 
     public SingleTask () {}
 
-    public Time getmStartTime() {
+    public Date getmStartTime() {
         return mStartTime;
     }
-
-    public void setmStartTime(Time mStartTime) {
-        this.mStartTime = mStartTime;
-    }
-
-    public Time getmEndTime() {
+    public Date getmEndTime() {
         return mEndTime;
     }
 
-    public void setmEndTime(Time mEndTime) {
+    public void setmStartTime(Date mStartTime) {
+        this.mStartTime = mStartTime;
+    }
+    public void setmEndTime(Date mEndTime) {
         this.mEndTime = mEndTime;
     }
 }

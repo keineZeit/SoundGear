@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">SoundGear</string>
     <string name="app_in_work">IN WORK</string>
-    <string name="sound_set_singletask">Set Single Task</string>
+    <string name="all_singletask">Single task</string>
+    <string name="all_ok">Ok</string>
+    <string name="all_cancel">Cancel</string>
+    <string name="sound_set_singletask">Set single task</string>
+    <string name="singletaskdialog_set_starttime">Set start time</string>
+    <string name="singletaskdialog_set_endtime">Set end time</string>
+    <string name="all_from">From</string>
+    <string name="all_to">To</string>
 </resources>

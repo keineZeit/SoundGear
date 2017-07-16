@@ -1,23 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:id="@+id/button_dialog_set"
-        android:layout_width="145dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Yes"
-        android:background="#00CC66"
-        android:textColor="#fff"
-        android:textStyle="bold"
-        android:layout_margin="5dp"/>
-    <Button
-        android:id="@+id/button_dialog_cancel"
-        android:layout_width="145dp"
+        android:text="@string/all_singletask"
+        android:gravity="center"/>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_from" />
+        <Button
+            android:id="@+id/button_dialog_setstarttime"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="@string/singletaskdialog_set_starttime"
+            android:background="@drawable/singletask_button"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No"
-        android:background="#FF3333"
-        android:textColor="#fff"
-        android:textStyle="bold"
-        android:layout_margin="5dp" />
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_to" />
+        <Button
+            android:id="@+id/button_dialog_setendtime"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="@string/singletaskdialog_set_starttime"
+            android:background="@drawable/singletask_button"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_dialog_cancel"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="@string/all_cancel"
+            android:layout_margin="5dp" />
+        <Button
+            android:id="@+id/button_dialog_ok"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="@string/all_ok"
+            android:layout_margin="5dp" />
+    </LinearLayout>
 </LinearLayout>
